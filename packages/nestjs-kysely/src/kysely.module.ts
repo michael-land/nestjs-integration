@@ -1,7 +1,8 @@
-import { DynamicModule, Module } from '@nestjs/common';
+import { DynamicModule, Global, Module } from '@nestjs/common';
 import { KyselyCoreModule } from './kysely.core-module';
 import { KyselyModuleAsyncOptions, KyselyModuleOptions } from './kysely.interfaces';
 
+@Global()
 @Module({})
 export class KyselyModule {
   public static forRoot(options: KyselyModuleOptions, connectionName?: string): DynamicModule {

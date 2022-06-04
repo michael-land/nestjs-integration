@@ -1,6 +1,6 @@
 {
   "name": "@nestjs-integration/puppeteer",
-  "version": "0.0.0",
+  "version": "0.0.5",
   "author": {
     "name": "Michael Li",
     "email": "xiaoyu.tamu@gmail.com",
@@ -33,7 +33,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "main": "./dist/index.cjs",
+    "main": "./dist/index.js",
     "module": "./dist/index.js",
     "types": "./dist/index.d.ts"
   }
