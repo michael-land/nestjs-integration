@@ -1,0 +1,31 @@
+{
+  "name": "@nestjs-integration/kysely",
+  "version": "0.0.0",
+  "author": "xiaoyu-tamu <xiaoyu.tamu@gmail.com>",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm -rf tsconfig.tsbuildinfo",
+    "dev": "tsc"
+  },
+  "devDependencies": {
+    "@nestjs/common": "8.4.6",
+    "kysely": "0.19.2"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^6.0.0 || ^7.0.0 || ^8.0.0",
+    "kysely": "^0.19.0"
+  },
+  "engines": {
+    "node": ">=17.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts"
+  }
+}

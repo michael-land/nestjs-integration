@@ -1,0 +1,16 @@
+.env
+
+.husky
+.github
+.vscode
+node_modules
+src
+test
+example
+
+TODO.md
+package-lock.json
+tsconfig-cjs.json
+tsconfig-esm.json
+tsconfig.json
+ormless.config.json

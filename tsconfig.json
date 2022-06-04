@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/node16-strictest-esm/tsconfig",
+  "compilerOptions": {
+    "moduleResolution": "Node",
+    "importsNotUsedAsValues": "remove",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "declaration": true
+  },
+  "files": []
+}

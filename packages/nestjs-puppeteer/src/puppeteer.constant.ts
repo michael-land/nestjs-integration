@@ -1,0 +1,1 @@
+export const PUPPETEER_OPTIONS = Symbol('PUPPETEER_OPTIONS');
