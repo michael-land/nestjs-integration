@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - '.changeset/**'
-      - '.github/workflows/release.yml'
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -54,6 +51,8 @@ jobs:
         uses: changesets/action@v1
         with:
           publish: pnpm exec changeset publish
+          commit: Version release
+          title: Next release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
