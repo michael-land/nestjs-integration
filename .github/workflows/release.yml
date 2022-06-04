@@ -5,7 +5,8 @@ on:
     branches:
       - main
     paths:
-      - '.changeset'
+      - '.changeset/**'
+      - '.github/workflows/deploy.yml'
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
