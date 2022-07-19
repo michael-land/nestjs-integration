@@ -17,7 +17,8 @@
   },
   "devDependencies": {
     "@nestjs/common": "9.0.4",
-    "puppeteer-core": "15.4.0"
+    "puppeteer-core": "15.4.0",
+    "puppeteer-extra": "3.3.4"
   },
   "peerDependencies": {
     "@nestjs/common": "^9.0.0",

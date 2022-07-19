@@ -15,22 +15,22 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - uses: pnpm/action-setup@v2
-        name: Install pnpm
+      - name: Setup Package Manager
+        uses: pnpm/action-setup@v2
 
-      - name: Setup Latest Node.js version
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: current
           cache: 'pnpm'
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: pnpm install
 
       - name: Build
         run: pnpm build
 
-      - name: Create Release Pull Request or Publish to npm
+      - name: Release
         id: changesets
         uses: changesets/action@v1
         with:
