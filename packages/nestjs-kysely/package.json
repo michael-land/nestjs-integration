@@ -12,11 +12,11 @@
     "dev": "tsc"
   },
   "devDependencies": {
-    "@nestjs/common": "8.4.6",
-    "kysely": "0.19.2"
+    "@nestjs/common": "9.0.4",
+    "kysely": "0.19.11"
   },
   "peerDependencies": {
-    "@nestjs/common": "^6.0.0 || ^7.0.0 || ^8.0.0",
+    "@nestjs/common": "^9.0.0",
     "kysely": "^0.19.0"
   },
   "engines": {
