@@ -1,5 +1,11 @@
 # @nestjs-integration/puppeteer
 
+## 0.0.7
+
+### Patch Changes
+
+- 00ec8ae: update dependencies
+
 ## 0.0.6
 
 ### Patch Changes
