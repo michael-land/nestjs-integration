@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: current
 
-      - uses: pnpm/action-setup@v2.2.2
+      - uses: pnpm/action-setup@v2.0.1
         name: Install pnpm
         id: pnpm-install
         with:
@@ -41,7 +41,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm -r install
+        run: NODE_ENV=development pnpm -r install
 
       - name: Build
         run: pnpm build
