@@ -15,10 +15,6 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm -rf tsconfig.tsbuildinfo",
     "dev": "tsc"
   },
-  "devDependencies": {
-    "@nestjs/common": "9.0.4",
-    "puppeteer-core": "15.4.0"
-  },
   "peerDependencies": {
     "@nestjs/common": "^9.0.0",
     "puppeteer-core": "^15.0.0"
