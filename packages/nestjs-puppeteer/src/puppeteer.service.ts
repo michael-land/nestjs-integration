@@ -1,5 +1,5 @@
 import { Inject, Injectable } from '@nestjs/common';
-import type { LaunchOptions } from 'puppeteer-core';
+import type { PuppeteerLaunchOptions } from 'puppeteer-core';
 import puppeteer from 'puppeteer-extra';
 import PuppeteerPluginAdBlocker from 'puppeteer-extra-plugin-adblocker';
 import PuppeteerPluginStealth from 'puppeteer-extra-plugin-stealth';
@@ -16,7 +16,7 @@ export class PuppeteerService {
     private readonly options: PuppeteerModuleOptions
   ) {}
 
-  async launch(options?: LaunchOptions) {
+  async launch(options?: PuppeteerLaunchOptions) {
     return puppeteer.launch({ ...this.options, ...options });
   }
 }

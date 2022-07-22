@@ -1,7 +1,7 @@
 import type { Abstract, ModuleMetadata, Type } from '@nestjs/common/interfaces';
-import type { LaunchOptions } from 'puppeteer-core';
+import type { PuppeteerLaunchOptions } from 'puppeteer-core';
 
-export type PuppeteerModuleOptions = LaunchOptions;
+export type PuppeteerModuleOptions = PuppeteerLaunchOptions;
 
 export interface PuppeteerOptionsFactor {
   createPuppeteerOptions(): Promise<PuppeteerModuleOptions> | PuppeteerModuleOptions;
