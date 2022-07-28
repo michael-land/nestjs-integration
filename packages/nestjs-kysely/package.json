@@ -1,6 +1,6 @@
 {
   "name": "@nestjs-integration/kysely",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": "xiaoyu-tamu <xiaoyu.tamu@gmail.com>",
   "type": "module",
   "files": [
