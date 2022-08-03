@@ -1,5 +1,11 @@
 # @nestjs-integration/kysely
 
+## 0.0.9
+
+### Patch Changes
+
+- cdd65a6: update deps
+
 ## 0.0.8
 
 ### Patch Changes

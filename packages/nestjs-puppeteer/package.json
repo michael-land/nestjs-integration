@@ -1,6 +1,6 @@
 {
   "name": "@nestjs-integration/puppeteer",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "author": {
     "name": "Michael Li",
     "email": "xiaoyu.tamu@gmail.com",
