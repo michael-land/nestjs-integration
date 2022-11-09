@@ -1,5 +1,11 @@
 # @nestjs-integration/kysely
 
+## 0.1.0
+
+### Minor Changes
+
+- 68c432d: upgrade to esmodule
+
 ## 0.0.9
 
 ### Patch Changes
