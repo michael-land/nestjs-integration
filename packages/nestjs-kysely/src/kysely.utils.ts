@@ -3,8 +3,8 @@ import {
   KYSELY_MODULE_CONNECTION,
   KYSELY_MODULE_CONNECTION_TOKEN,
   KYSELY_MODULE_OPTIONS_TOKEN,
-} from './kysely.constants';
-import { KyselyModuleOptions } from './kysely.interfaces';
+} from './kysely.constants.js';
+import type { KyselyModuleOptions } from './kysely.interfaces.js';
 
 export function getKyselyOptionsToken(connectionName?: string): string {
   return `${connectionName || KYSELY_MODULE_CONNECTION}_${KYSELY_MODULE_OPTIONS_TOKEN}`;

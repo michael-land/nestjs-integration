@@ -1,9 +1,12 @@
 {
-  "extends": "../../tsconfig",
+  "extends": "@tsconfig/node18-strictest-esm",
   "compilerOptions": {
+    "declaration": true,
     "rootDir": "src",
-    "outDir": "./dist"
+    "outDir": "dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
   },
   "include": ["src"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }

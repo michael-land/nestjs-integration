@@ -1,10 +1,10 @@
-import { DynamicModule, Module, Provider } from '@nestjs/common';
-import { PUPPETEER_OPTIONS } from './puppeteer.constant';
-import {
+import { Module, type DynamicModule, type Provider } from '@nestjs/common';
+import { PUPPETEER_OPTIONS } from './puppeteer.constant.js';
+import type {
   PuppeteerModuleAsyncOptions,
   PuppeteerModuleOptions,
   PuppeteerOptionsFactor,
-} from './puppeteer.type';
+} from './puppeteer.type.js';
 
 @Module({})
 export class PuppeteerModule {

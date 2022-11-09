@@ -10,7 +10,11 @@ module.exports = {
     'plugin:node/recommended',
   ],
   settings: {
-    node: { allowModules: [], tryExtensions: ['.ts', '.js'] },
+    node: {
+      allowModules: [],
+      resolvePaths: [__dirname],
+      tryExtensions: ['.js', '.json', '.node', '.ts'],
+    },
   },
   env: {
     node: true,
@@ -18,16 +22,9 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   rules: {
-    'node/no-extraneous-import': 'off',
-    'node/no-missing-import': 'off',
     'node/no-unsupported-features/es-syntax': ['error', { ignores: ['modules'] }],
-    'node/no-unpublished-import': 'off',
-    '@typescript-eslint/ban-types': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/no-empty-function': 'off',
+    'node/no-missing-import': 'off',
     '@typescript-eslint/no-empty-interface': 'off',
-    '@typescript-eslint/no-namespace': 'off',
-    '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
   },
   overrides: [],

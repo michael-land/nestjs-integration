@@ -1,5 +1,5 @@
 {
-  "extends": "@tsconfig/node16-strictest-esm/tsconfig",
+  "extends": "@tsconfig/node18-strictest-esm",
   "compilerOptions": {
     "moduleResolution": "Node",
     "importsNotUsedAsValues": "remove",

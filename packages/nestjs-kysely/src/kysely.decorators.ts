@@ -1,6 +1,5 @@
 import { Inject } from '@nestjs/common';
-import { getKyselyConnectionToken } from './kysely.utils';
+import { getKyselyConnectionToken } from './kysely.utils.js';
 
-export const InjectDatabase = (connectionName?: string) => {
-  return Inject(getKyselyConnectionToken(connectionName));
-};
+export const InjectDatabase = (connectionName?: string) =>
+  Inject(getKyselyConnectionToken(connectionName));

@@ -1,5 +1,5 @@
-import { ModuleMetadata, Type } from '@nestjs/common/interfaces';
-import { KyselyConfig } from 'kysely';
+import type { ModuleMetadata, Type } from '@nestjs/common/interfaces';
+import type { KyselyConfig } from 'kysely';
 
 export interface KyselyModuleOptions extends KyselyConfig {}
 

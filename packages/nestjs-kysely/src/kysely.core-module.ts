@@ -1,14 +1,14 @@
-import { DynamicModule, Module, Provider } from '@nestjs/common';
-import {
+import { Module, type DynamicModule, type Provider } from '@nestjs/common';
+import type {
   KyselyModuleAsyncOptions,
   KyselyModuleOptions,
   KyselyModuleOptionsFactory,
-} from './kysely.interfaces';
+} from './kysely.interfaces.js';
 import {
   createKyselyConnection,
   getKyselyConnectionToken,
   getKyselyOptionsToken,
-} from './kysely.utils';
+} from './kysely.utils.js';
 
 @Module({})
 export class KyselyCoreModule {
